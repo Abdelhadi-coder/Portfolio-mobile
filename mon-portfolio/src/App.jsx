@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
+import Projects from './sections/Projects'
 // import ThemeToggle from './components/ThemeToggle';
 // import About from './sections/About'
 // import Projects from './sections/Projects'
@@ -12,10 +13,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="pt-20"> {/* Padding top pour que le contenu ne soit pas caché sous la navbar */}
+      <main className="pt-20">
         <Hero />
         <section id="projects" className="min-h-screen p-8 scroll-mt-24">
-          <h2 className="text-3xl font-bold mb-4">Projects</h2>
+          <h2 className="text-3xl font-bold mb-8 text-blue-700 text-center">Mes Projets</h2>
+          <Projects />
         </section>
         <section id="skills" className="min-h-screen p-8 scroll-mt-24">
           <h2 className="text-3xl font-bold mb-4">Skills</h2>
