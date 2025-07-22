@@ -1,18 +1,59 @@
+// import { Typewriter } from 'react-simple-typewriter'
+
+// function Hero() {
+//   return (
+//     <section className="min-h-screen flex flex-col items-center justify-center bg-white text-gray-900">
+//       <h1 className="text-4xl sm:text-5xl font-extrabold mb-2 text-center">
+//         Hello, moi c’est{' '}
+//         <div className="inline-block">
+//             <span className="text-transparent bg-clip-text bg-[linear-gradient(to_right,#036bfc,#030ffc,#8c03fc)]">
+//             Abdel-Hadi
+//             </span>
+//             {/* Barre sous le prénom, uniquement mobile */}
+//             <div className="w-full h-1 mt-1 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 block md:hidden" />
+//         </div>
+//       </h1>
+//       <h2 className="text-xl sm:text-2xl font-medium text-gray-700 text-center">
+//         <Typewriter
+//           words={[
+//             'UX/UI Designer',
+//             'Développeur Frontend créatif',
+//             'Passionné par le design mobile',
+//             'Motivé & déterminé',
+//             'Toujours prêt à relever un défi',
+//           ]}
+//           loop={0}
+//           cursor
+//           cursorStyle="|"
+//           typeSpeed={70}
+//           deleteSpeed={50}
+//           delaySpeed={1000}
+//         />
+//       </h2>
+//     </section>
+//   )
+// }
+
+// export default Hero
+
 import { Typewriter } from 'react-simple-typewriter'
+import { Github, Linkedin, Download } from 'lucide-react'
 
 function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center bg-white text-gray-900">
+    <section className="min-h-[80vh] flex flex-col items-center justify-center bg-white text-gray-900 px-4">
       <h1 className="text-4xl sm:text-5xl font-extrabold mb-2 text-center">
         Hello, moi c’est{' '}
         <div className="inline-block">
-            <span className="text-transparent bg-clip-text bg-[linear-gradient(to_right,#036bfc,#030ffc,#8c03fc)]">
-                Abdel-Hadi
-            </span>
-             <div className="h-1 mt-1 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 block md:hidden" style={{width: '50%'}} />
+          <span className="text-transparent bg-clip-text bg-[linear-gradient(to_right,#036bfc,#030ffc,#8c03fc)]">
+            Abdel-Hadi
+          </span>
+          {/* Barre sous le prénom, uniquement mobile */}
+          <div className="w-full h-1 mt-1 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 block md:hidden" />
         </div>
       </h1>
-      <h2 className="text-xl sm:text-2xl font-medium text-gray-700 text-center">
+
+      <h2 className="text-xl sm:text-2xl font-medium text-gray-700 text-center mb-6">
         <Typewriter
           words={[
             'UX/UI Designer',
@@ -29,6 +70,46 @@ function Hero() {
           delaySpeed={1000}
         />
       </h2>
+
+      <div className="flex gap-6 items-center justify-center bg-white border border-gray-200 shadow-md rounded-full px-6 py-3 max-w-[90%] sm:max-w-md md:max-w-lg">
+        {/* GitHub */}
+        <a
+            href="https://github.com/Abdelhadi-coder"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group text-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400 rounded-full p-1"
+        >
+            <Github className="w-7 h-7 group-hover:scale-110 transition-transform duration-200" />
+            <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity bg-gray-800 text-white text-xs rounded-md px-2 py-1">
+            GitHub
+            </span>
+        </a>
+
+        {/* LinkedIn */}
+        <a
+            href="https://www.linkedin.com/in/abdel-hadir?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group text-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400 rounded-full p-1"
+        >
+            <Linkedin className="w-7 h-7 group-hover:scale-110 transition-transform duration-200" />
+            <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity bg-gray-800 text-white text-xs rounded-md px-2 py-1">
+            LinkedIn
+            </span>
+        </a>
+
+        {/* CV */}
+        <a
+            href="/cv-abdelhadi.pdf"
+            download
+            className="relative group text-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400 rounded-full p-1"
+        >
+            <Download className="w-7 h-7 group-hover:scale-110 transition-transform duration-200" />
+            <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity bg-gray-800 text-white text-xs rounded-md px-2 py-1">
+            Télécharger mon CV
+            </span>
+        </a>
+        </div>
     </section>
   )
 }
