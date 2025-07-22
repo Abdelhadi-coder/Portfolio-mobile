@@ -41,7 +41,7 @@ export default function Navbar() {
                 href={`#${id}`}
                 className={`cursor-pointer px-4 py-2 rounded-md transition duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-400 ${
                   id === 'contact'
-                    ? 'bg-indigo-600 text-white hover:bg-transparent hover:text-gray-700 hover:border hover:border-gray-400'
+                    ? 'bg-indigo-600 text-white hover:bg-transparent hover:text-gray-700 border border-transparent hover:border hover:border-gray-400'
                     : 'text-gray-700 hover:bg-indigo-500 hover:text-white'
                 }`}
                 onClick={(e) => handleLinkClick(e, id)}
@@ -70,7 +70,7 @@ export default function Navbar() {
                 href={`#${id}`}
                 className={`block text-lg cursor-pointer px-4 py-2 rounded-md transition duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-400 ${
                   id === 'contact'
-                    ? 'bg-indigo-600 text-white hover:bg-transparent hover:text-gray-700 hover:border hover:border-gray-400'
+                    ? 'bg-indigo-600 text-white hover:bg-transparent hover:text-gray-700 border border-transparent hover:border hover:border-gray-400'
                     : 'text-gray-700 hover:bg-indigo-500 hover:text-white'
                 }`}
                 onClick={(e) => handleLinkClick(e, id)}
