@@ -29,8 +29,8 @@ export default function Navbar() {
   `
 
   return (
-    <nav className="fixed w-full bg-white shadow-md z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <nav className="fixed w-full bg-white shadow-md z-50 top-0 left-0">
+      <div className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
         <div className="text-2xl font-bold text-indigo-600 select-none"><a href="/">Abdel-Hadi</a></div>
 
         {/* Desktop links */}
@@ -39,7 +39,11 @@ export default function Navbar() {
             <li key={id}>
               <a
                 href={`#${id}`}
-                className={linkClasses}
+                className={`cursor-pointer px-4 py-2 rounded-md transition duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-400 ${
+                  id === 'contact'
+                    ? 'bg-indigo-600 text-white hover:bg-transparent hover:text-gray-700 hover:border hover:border-gray-400'
+                    : 'text-gray-700 hover:bg-indigo-500 hover:text-white'
+                }`}
                 onClick={(e) => handleLinkClick(e, id)}
               >
                 {id.charAt(0).toUpperCase() + id.slice(1)}
@@ -47,8 +51,6 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-
-        {/* Mobile menu button */}
         <button
           onClick={toggleMenu}
           className="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
@@ -66,7 +68,11 @@ export default function Navbar() {
             <li key={id}>
               <a
                 href={`#${id}`}
-                className={linkClasses + ' block text-lg'}
+                className={`block text-lg cursor-pointer px-4 py-2 rounded-md transition duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-400 ${
+                  id === 'contact'
+                    ? 'bg-indigo-600 text-white hover:bg-transparent hover:text-gray-700 hover:border hover:border-gray-400'
+                    : 'text-gray-700 hover:bg-indigo-500 hover:text-white'
+                }`}
                 onClick={(e) => handleLinkClick(e, id)}
               >
                 {id.charAt(0).toUpperCase() + id.slice(1)}

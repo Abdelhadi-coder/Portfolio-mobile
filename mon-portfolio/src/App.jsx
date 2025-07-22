@@ -14,17 +14,14 @@ function App() {
       <Navbar />
       <main className="pt-20"> {/* Padding top pour que le contenu ne soit pas caché sous la navbar */}
         <Hero />
-        <section id="projects" className="min-h-screen p-8">
+        <section id="projects" className="min-h-screen p-8 scroll-mt-24">
           <h2 className="text-3xl font-bold mb-4">Projects</h2>
-          {/* Contenu projects */}
         </section>
-        <section id="skills" className="min-h-screen p-8">
+        <section id="skills" className="min-h-screen p-8 scroll-mt-24">
           <h2 className="text-3xl font-bold mb-4">Skills</h2>
-          {/* Contenu skills */}
         </section>
-        <section id="contact" className="min-h-screen p-8">
+        <section id="contact" className="min-h-screen p-8 scroll-mt-24">
           <h2 className="text-3xl font-bold mb-4">Contact</h2>
-          {/* Contenu contact */}
         </section>
       </main>
       {/* <About />
