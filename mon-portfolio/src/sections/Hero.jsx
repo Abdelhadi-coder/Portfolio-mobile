@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Typewriter } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Download } from 'lucide-react'
@@ -9,6 +10,14 @@ const fadeInUp = {
 }
 
 export default function Hero() {
+
+    const [activeLink, setActiveLink] = useState(null);
+
+    useEffect(() => {
+    const stored = localStorage.getItem("activeLink");
+    if (stored) setActiveLink(stored);
+    }, []);
+
   return (
     <section className="min-h-[80vh] flex items-center justify-center px-4 bg-gradient-to-b from-blue-100 to-white text-gray-900 relative">
       <motion.div
@@ -66,23 +75,30 @@ export default function Hero() {
         </motion.p>
 
         <motion.div
-          className="flex gap-6 items-center justify-center bg-white border border-gray-200 shadow-lg rounded-full px-6 py-3 mb-4"
+          className="flex gap-6 items-center justify-center bg-white border border-gray-200 shadow-lg rounded-full px-4 py-2 mb-4"
           variants={fadeInUp}
         >
           {links.map(({ href, label, Icon, download }) => (
-            <a
-              key={label}
-              href={href}
-              target={download ? undefined : '_blank'}
-              rel={download ? undefined : 'noopener noreferrer'}
-              download={download}
-              className="relative group text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full p-4 hover:bg-gray-100 active:bg-gray-200 transition"
-            >
-              <Icon className="w-8 h-8 group-hover:scale-110 group-focus:scale-110 transition-transform" />
-              <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus:opacity-100 text-xs bg-gray-800 text-white rounded px-2 py-1 transition-opacity">
-                {label}
-              </span>
+           <a
+                key={label}
+                href={href}
+                target={download ? undefined : "_blank"}
+                rel={download ? undefined : "noopener noreferrer"}
+                download={download}
+                onClick={() => {
+                    setActiveLink(label);
+                    localStorage.setItem("activeLink", label);
+                }}
+                className={`relative group text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full p-2.5 transition
+                    ${activeLink === label ? "bg-gray-100" : ""}
+                    hover:bg-gray-100 active:bg-gray-200`}
+                >
+                <Icon className="w-8 h-8 group-hover:scale-110 group-focus:scale-110 transition-transform" />
+                <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus:opacity-100 text-xs bg-gray-800 text-white rounded px-2 py-1 transition-opacity">
+                    {label}
+                </span>
             </a>
+
           ))}
         </motion.div>
       </motion.div>

@@ -57,7 +57,7 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-  <ul className="md:hidden bg-white shadow-md flex flex-col space-y-2 px-6 py-4 border-t border-gray-200 animate-slideDown">
+        <ul className="md:hidden bg-white shadow-md flex flex-col space-y-2 px-6 py-4 border-t border-gray-200 animate-slideDown">
           {['projects', 'skills', 'contact'].map((id) => (
             <li key={id}>
               <a
