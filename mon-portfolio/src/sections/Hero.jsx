@@ -33,7 +33,7 @@ export default function Hero() {
         }}
       >
         <motion.h1
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-7 mt-12"
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-7 mt-18 sm:mt-16"
         variants={fadeInUp}
         >
         Hello, moi c’est{' '}
@@ -75,7 +75,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.div
-          className="flex gap-6 items-center justify-center bg-white border border-gray-200 shadow-lg rounded-full px-4 py-2 mb-4"
+          className="flex gap-6 items-center justify-center bg-white border border-gray-200 shadow-lg rounded-full px-4 mt-8 md:mt-10 py-2 mb-4"
           variants={fadeInUp}
         >
           {links.map(({ href, label, Icon, download }) => (
