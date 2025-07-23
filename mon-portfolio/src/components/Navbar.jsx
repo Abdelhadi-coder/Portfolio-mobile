@@ -31,7 +31,7 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full bg-white shadow-md z-50 top-0 left-0">
       <div className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-        <div className="text-2xl font-bold text-indigo-600 select-none"><a href="/">Abdel-Hadi</a></div>
+        <div className="text-2xl font-bold select-none text-transparent bg-clip-text bg-[linear-gradient(to_right,#036bfc,#030ffc,#8c03fc)]"><a href="/">Abdel-Hadi</a></div>
 
         {/* Desktop links */}
         <ul className="hidden md:flex space-x-6">

@@ -12,10 +12,10 @@ const projects = [
     tech: ['React Native', 'Expo', 'Cloudflare R2'],
   },
   {
-    title: 'Cours Islam',
-    description: 'Site web de cours religieux audio avec React et design sombre.',
+    title: 'Tweet Académie',
+    description: 'Reproduction du site web X (anciennement Twitter)',
     link: '#',
-    tech: ['React', 'Tailwind', 'Audio Player'],
+    tech: ['PHP', 'Tailwind', 'MySql'],
   },
 ]
 

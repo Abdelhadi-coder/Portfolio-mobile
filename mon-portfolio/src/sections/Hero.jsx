@@ -110,7 +110,7 @@ export default function Hero() {
   return (
     <section className="min-h-[80vh] flex items-center justify-center px-4 bg-gradient-to-b from-blue-100 to-white text-gray-900 relative">
       <motion.div
-        className="flex flex-col items-center text-center max-w-3xl w-full transform -translate-y-10"
+        className="flex flex-col items-center text-center max-w-3xl w-full transform -translate-y-5"
         initial="initial"
         animate="animate"
         variants={{
@@ -133,7 +133,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.h2
-          className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-9 font-medium"
+          className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-12 font-medium"
           variants={fadeInUp}
         >
           <Typewriter
