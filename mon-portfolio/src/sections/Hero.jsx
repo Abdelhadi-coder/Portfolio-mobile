@@ -33,7 +33,7 @@ export default function Hero() {
         }}
       >
         <motion.h1
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-7"
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-7 mt-12"
         variants={fadeInUp}
         >
         Hello, moi c’est{' '}
@@ -49,7 +49,7 @@ export default function Hero() {
           <Typewriter
             words={[
               'UX/UI Designer',
-              'Développeur Frontend créatif',
+              'Développeur Front-end créatif',
               'Passionné par le design mobile',
               'Motivé & déterminé',
               'Toujours prêt à relever un défi',
@@ -67,8 +67,8 @@ export default function Hero() {
           className="text-base sm:text-lg md:text-xl text-gray-600 px-4 leading-relaxed mb-8 sm:mb-8 md:mb-16"
           variants={fadeInUp}
         >
-          Je suis un <span className="text-blue-700 font-semibold">développeur frontend</span> passionné par le design et
-          les interfaces modernes. Mon objectif ? Créer les app les plus
+          Je suis un <span className="text-blue-700 font-semibold">développeur front-end</span> passionné par le design et
+          les interfaces modernes. Mon objectif ? Créer les apps les plus
           <span className="text-blue-700 font-semibold"> percutantes</span>, les plus
           <span className="text-blue-700 font-semibold"> claires</span> et les plus
           <span className="text-blue-700 font-semibold"> design</span>.
