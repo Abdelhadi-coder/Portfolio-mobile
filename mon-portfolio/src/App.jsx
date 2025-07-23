@@ -30,10 +30,10 @@ function App() {
         <section id="contact" className="min-h-screen p-8 scroll-mt-24">
           <h2 className="text-3xl font-bold mb-4">Contact</h2>
         </section>
-        <section id="testimonials" className="min-h-screen p-8 scroll-mt-24">
+        {/* <section id="testimonials" className="min-h-screen p-8 scroll-mt-24">
           <h2 className="text-4xl font-bold mb-8 text-blue-700 text-center">Témoignages</h2>
           <Testimonials />
-        </section>
+        </section> */}
       </main>
       {/* <About />
       <Projects />
