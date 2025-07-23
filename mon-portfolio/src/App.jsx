@@ -1,3 +1,4 @@
+import BackgroundParticles from './components/BackgroundParticles'
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import Projects from './sections/Projects'
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <BackgroundParticles />
       <main className="pt-20">
         <Hero />
         <section id="projects" className="min-h-screen p-8 scroll-mt-24">
