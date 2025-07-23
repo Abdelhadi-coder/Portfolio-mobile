@@ -1,5 +1,13 @@
 const projects = [
-    {
+  {
+    title: 'Portfolio 3D interactif',
+    description: "Conception d’un portfolio immersif avec Three.js, intégrant un modèle 3D manipulable et des animations fluides en React.",
+    link: 'https://portfolio-threejs-neon.vercel.app',
+    tech: ['React', 'JavaScript', 'Three.js'],
+    image: '/images/project3.png',
+    private: false,
+  },
+  {
     title: 'Maquette Responsive',
     description: "Création d'une maquette web entièrement responsive à partir d'une simple capture d'écran, en respectant les standards HTML/CSS.",
     link: '#',
@@ -14,14 +22,6 @@ const projects = [
     tech: ['JavaScript', 'HTML', 'CSS'],
     image: '/images/project2.png',
     private: true,
-  },
-  {
-    title: 'Portfolio 3D interactif',
-    description: "Conception d’un portfolio immersif avec Three.js, intégrant un modèle 3D manipulable et des animations fluides en React.",
-    link: 'https://portfolio-threejs-neon.vercel.app',
-    tech: ['React', 'JavaScript', 'Three.js'],
-    image: '/images/project3.png',
-    private: false,
   },
 ]
 
