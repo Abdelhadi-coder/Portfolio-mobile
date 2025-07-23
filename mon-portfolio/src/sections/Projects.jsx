@@ -18,16 +18,56 @@ export default function Projects() {
         <motion.a
           key={project.title}
           href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
+          target={project.link === "#" ? undefined : "_blank"}
+          rel={project.link === "#" ? undefined : "noopener noreferrer"}
           variants={cardVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           custom={i}
-          className="group relative rounded-2xl bg-white border border-gray-200 p-6 shadow-md hover:shadow-xl transition duration-300"
+          onClick={(e) => {
+            if (project.link === "#") e.preventDefault()
+          }}
+          className="
+            group
+            relative
+            rounded-2xl
+            bg-white
+            border
+            border-gray-200
+            p-6
+            shadow-md
+            transition
+            duration-300
+            ease-out
+
+            hover:-translate-y-1.5
+            hover:shadow-xl
+
+            focus-visible:outline-none
+            focus-visible:ring-2
+            focus-visible:ring-blue-500
+
+            active:scale-[1.03]
+            active:shadow-2xl
+
+            // Mobile touch effect (simulate tap)
+            touch-manipulation
+
+            "
         >
-          <h3 className="text-xl font-bold text-blue-700 group-hover:underline">
+          <h3
+            className="
+              text-xl
+              font-bold
+              text-blue-700
+              border-b-2 border-transparent
+              group-hover:border-blue-700
+              transition-all duration-300
+              pb-1
+              group-hover:pb-0
+            "
+          >
             {project.title}
           </h3>
           <p className="text-gray-600 mt-2">{project.description}</p>

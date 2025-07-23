@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'Free Ads',
     description: 'Un site d’annonces style LeBonCoin codé en Laravel.',
-    link: 'https://github.com/Abdelhadi-coder/Free-Ads',
+    link: '#',
     tech: ['Laravel', 'Tailwind', 'MySQL'],
   },
   {
