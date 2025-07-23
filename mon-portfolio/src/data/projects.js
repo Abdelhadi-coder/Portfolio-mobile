@@ -1,21 +1,27 @@
 const projects = [
   {
-    title: 'Free Ads',
-    description: 'Un site d’annonces style LeBonCoin codé en Laravel.',
+    title: 'Maquette Reponsive',
+    description: "Premier projet réalisé dans ma formation une maquette faite de A à Z à partir d'une image",
     link: '#',
-    tech: ['Laravel', 'Tailwind', 'MySQL'],
+    tech: ['HTML', 'CSS'],
+    image: '/images/project1.png',
+    private: true,
   },
   {
-    title: 'Snap App',
-    description: 'Application mobile React Native type Snapchat (caméra, swipe, API).',
+    title: 'Morpion',
+    description: "Projet réalisé en l'espace de 4 heures seulement. Un morpion fonctionnel avec comptage des points et detection du gagnant",
     link: '#',
-    tech: ['React Native', 'Expo', 'Cloudflare R2'],
+    tech: ['Javascript', 'HTML', 'CSS'],
+    image: '/images/project2.png',
+    private: true,
   },
   {
-    title: 'Tweet Académie',
-    description: 'Reproduction du site web X (anciennement Twitter)',
-    link: '#',
-    tech: ['PHP', 'Tailwind', 'MySql'],
+    title: 'Premier Portfolio',
+    description: 'Réalisation de mon premier portfolio avec Three.js avec intégration de modèle 3D interatif',
+    link: 'https://portfolio-threejs-neon.vercel.app',
+    tech: ['React', 'Javascript', 'Three.js'],
+    image: '/images/project3.png',
+    private: false,
   },
 ]
 
