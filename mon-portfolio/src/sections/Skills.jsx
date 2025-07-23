@@ -3,7 +3,7 @@ import skills from '../data/skills'
 
 export default function Skills() {
   return (
-    <section id="skills" className="min-h-screen p-8 scroll-mt-24 bg-white text-gray-900">
+    <section id="skills" className="min-h-screen p-8 scroll-mt-46 sm:scroll-mt-48 lg:scroll-mt-50 bg-white text-gray-900">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
         {skills.map(({ name, icon: Icon, color }, index) => {
           const groupIndex = Math.floor(index / 2)
