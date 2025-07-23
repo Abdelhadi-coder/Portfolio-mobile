@@ -6,14 +6,13 @@ export default function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen)
 
-  // Scroll en douceur vers la section
   const handleLinkClick = (e, id) => {
     e.preventDefault()
     const section = document.getElementById(id)
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' })
     }
-    setIsOpen(false) // ferme le menu mobile après clic
+    setTimeout(() => setIsOpen(false), 200)
   }
 
   const linkClasses = `
@@ -21,9 +20,10 @@ export default function Navbar() {
     px-4 py-2
     rounded-md
     transition
-    duration-200
+    duration-300
     text-gray-700
     hover:bg-indigo-500 hover:text-white
+    active:scale-95
     active:bg-indigo-700
     focus:outline-none focus:ring-2 focus:ring-indigo-400
   `
@@ -33,7 +33,6 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
         <div className="text-2xl font-bold select-none text-transparent bg-clip-text bg-[linear-gradient(to_right,#036bfc,#030ffc,#8c03fc)]"><a href="/">Abdel-Hadi</a></div>
 
-        {/* Desktop links */}
         <ul className="hidden md:flex space-x-6">
           {['projects', 'skills', 'contact'].map((id) => (
             <li key={id}>
@@ -57,9 +56,8 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {isOpen && (
-        <ul className="md:hidden bg-white shadow-md flex flex-col space-y-2 px-6 py-4 border-t border-gray-200">
+  <ul className="md:hidden bg-white shadow-md flex flex-col space-y-2 px-6 py-4 border-t border-gray-200 animate-slideDown">
           {['projects', 'skills', 'contact'].map((id) => (
             <li key={id}>
               <a

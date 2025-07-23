@@ -123,13 +123,13 @@ export default function Hero() {
       >
         {/* Titre */}
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-7"
-          variants={fadeInUp}
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-7"
+        variants={fadeInUp}
         >
-          Hello, moi c’est{' '}
-          <span className="text-transparent bg-clip-text bg-[linear-gradient(to_right,#036bfc,#030ffc,#8c03fc)]">
+        Hello, moi c’est{' '}
+        <span className="whitespace-nowrap text-transparent bg-clip-text bg-[linear-gradient(to_right,#036bfc,#030ffc,#8c03fc)]">
             Abdel-Hadi
-          </span>
+        </span>
         </motion.h1>
 
         <motion.h2
@@ -175,7 +175,7 @@ export default function Hero() {
               target={download ? undefined : '_blank'}
               rel={download ? undefined : 'noopener noreferrer'}
               download={download}
-              className="relative group text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full p-3 hover:bg-gray-100 active:bg-gray-200 transition"
+              className="relative group text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full p-4 hover:bg-gray-100 active:bg-gray-200 transition"
             >
               <Icon className="w-8 h-8 group-hover:scale-110 group-focus:scale-110 transition-transform" />
               <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus:opacity-100 text-xs bg-gray-800 text-white rounded px-2 py-1 transition-opacity">
