@@ -80,23 +80,23 @@ export default function Hero() {
         >
           {links.map(({ href, label, Icon, download }) => (
            <a
-                key={label}
-                href={href}
-                target={download ? undefined : "_blank"}
-                rel={download ? undefined : "noopener noreferrer"}
-                download={download}
-                onClick={() => {
-                    setActiveLink(label);
-                    localStorage.setItem("activeLink", label);
-                }}
-                className={`relative group text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full p-2.5 transition
-                    ${activeLink === label ? "bg-gray-100" : ""}
-                    hover:bg-gray-100 active:bg-gray-200`}
-                >
-                <Icon className="w-8 h-8 group-hover:scale-110 group-focus:scale-110 transition-transform" />
-                <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus:opacity-100 text-xs bg-gray-800 text-white rounded px-2 py-1 transition-opacity">
-                    {label}
-                </span>
+            key={label}
+            href={href}
+            target={download ? undefined : "_blank"}
+            rel={download ? undefined : "noopener noreferrer"}
+            download={download}
+            onClick={() => {
+                setActiveLink(label);
+                localStorage.setItem("activeLink", label);
+            }}
+            className={`relative group text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full p-2.5 transition
+                ${activeLink === label ? "bg-gray-100" : ""}
+                hover:bg-gray-100 active:bg-gray-200`}
+            >
+            <Icon className="w-8 h-8 group-hover:scale-110 group-focus:scale-110 transition-transform" />
+            <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus:opacity-100 text-xs bg-gray-800 text-white rounded px-2 py-1 transition-opacity">
+                {label}
+            </span>
             </a>
 
           ))}

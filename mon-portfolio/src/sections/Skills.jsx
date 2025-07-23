@@ -11,7 +11,7 @@ export default function Skills() {
             key={name}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4, delay: index * 0.125 }}
+            transition={{ duration: 0.3, delay: index * 0.2 }}
             viewport={{ once: true }}
             className="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition"
           >
