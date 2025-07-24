@@ -1,5 +1,6 @@
 import BackgroundParticles from './components/BackgroundParticles'
 import Navbar from './components/Navbar'
+import ContactForm from './sections/ContactForm'
 import Hero from './sections/Hero'
 import Projects from './sections/Projects'
 import Skills from './sections/Skills'
@@ -19,18 +20,18 @@ function App() {
       <BackgroundParticles />
       <main className="pt-20">
         <Hero />
-        <section id="projects" className="min-h-screen p-8 scroll-mt-24">
+        <section id="projects" className=" p-8 scroll-mt-24">
           <h2 className="text-4xl font-bold mb-8 text-blue-700 text-center">Mes Projets</h2>
           <Projects />
         </section>
-         <section id="projects" className="min-h-screen p-8 scroll-mt-24">
-          <h2 className="text-4xl font-bold mb-8 text-blue-700 text-center">Mes Skills</h2>
+         <section id="projects" className=" p-8 scroll-mt-24">
+          <h2 className="text-4xl font-bold mb-3 text-blue-700 text-center">Mes Skills</h2>
           <Skills />
         </section>
-        <section id="contact" className="min-h-screen p-8 scroll-mt-24">
-          <h2 className="text-3xl font-bold mb-4">Contact</h2>
+        <section id="contact" className="p-8 scroll-mt-24">
+          <ContactForm />
         </section>
-        {/* <section id="testimonials" className="min-h-screen p-8 scroll-mt-24">
+        {/* <section id="testimonials" className="p-8 scroll-mt-24">
           <h2 className="text-4xl font-bold mb-8 text-blue-700 text-center">Témoignages</h2>
           <Testimonials />
         </section> */}
