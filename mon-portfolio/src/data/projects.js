@@ -9,7 +9,7 @@ const projects = [
   },
   {
     title: 'Reproduction de maquette web',
-    description: "Intégration pixel-perfect d’un site à partir d’une simple capture d’écran, avec un design 100% responsive et conforme aux standards HTML/CSS.",
+    description: "Intégration d’un site à partir d’une capture d’écran, avec un design 100% responsive et conforme aux standards HTML/CSS.",
     link: '#',
     tech: ['HTML5', 'CSS3', 'Responsive'],
     image: '/images/project1.png',
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: 'Clone de Twitter (UI)',
-    description: "Reproduction fidèle de l’interface de Twitter : fil d’actualité, sidebar, bouton de tweet animé, responsive design avec React.",
+    description: "Reproduction fidèle de l’interface de Twitter : fil d’actualité, sidebar, bouton de tweet animé, responsive design avec Tailwind.",
     link: '#',
     tech: ['PHP', 'Tailwind CSS', 'MySql'],
     image: '/images/project4.png',
