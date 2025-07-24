@@ -24,7 +24,7 @@ const projects = [
     private: true,
   },
   {
-    title: 'Puissance 4 en ligne',
+    title: 'Puissance 4',
     description: "Développement d’un jeu complet de Puissance 4 avec logique de victoire, tours de jeu alternés, et score en temps réel. Réalisé en JavaScript natif.",
     link: '#',
     tech: ['JavaScript', 'HTML', 'CSS'],
@@ -40,7 +40,7 @@ const projects = [
     private: true,
   },
   {
-    title: 'Responsive Design Challenge',
+    title: 'Responsive Design',
     description: "Reproduction d’une landing page moderne à partir d’un screenshot, en responsive complet avec flexbox et media queries.",
     link: '#',
     tech: ['HTML', 'CSS', 'Mobile First'],
