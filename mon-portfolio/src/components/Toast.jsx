@@ -5,7 +5,7 @@ export default function Toast({ visible, message }) {
         px-6 sm:px-10 md:px-12 py-4 sm:py-6 md:py-8 
         max-w-[90vw] w-fit 
         rounded-2xl 
-        bg-gray-900/90
+        bg-gray-900/60
         text-white text-sm sm:text-base md:text-lg font-medium 
         shadow-2xl backdrop-blur-md z-50 
         transition-opacity transition-transform duration-500 
@@ -16,5 +16,3 @@ export default function Toast({ visible, message }) {
     </div>
   );
 }
-
-// ✅ Email copié !
