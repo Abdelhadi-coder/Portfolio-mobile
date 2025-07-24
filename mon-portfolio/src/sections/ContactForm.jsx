@@ -23,7 +23,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setToastMessage("✉️ Merci pour ton message ! (La messagerie ne marche pas)")
+    setToastMessage("✉️ Merci pour ton message !")
     setToastVisible(true)
     setTimeout(() => setToastVisible(false), 3000)
     setFormData({ name: '', email: '', message: '' })
