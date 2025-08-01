@@ -36,9 +36,9 @@ export default function Hero() {
         className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-7 mt-18 sm:mt-16"
         variants={fadeInUp}
         >
-        Hello, moi c’est{' '}
+        Ca va ou quoi{' '}
         <span className="whitespace-nowrap text-transparent bg-clip-text bg-[linear-gradient(to_right,#036bfc,#030ffc,#8c03fc)]">
-            Abdel-Hadi
+            Yasmine ??
         </span>
         </motion.h1>
 
