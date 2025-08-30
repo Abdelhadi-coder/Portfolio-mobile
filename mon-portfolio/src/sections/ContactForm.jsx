@@ -104,11 +104,11 @@ export default function Contact() {
         >
           abdel-hadi.ranem@epitech.eu
         </motion.div>
-
+{/* 
         <p className="mt-6 text-center text-gray-600 text-sm max-w-xl mx-auto leading-relaxed">
           Merci à l’équipe Iara de m’avoir accordé un délai pour faire le portfolio.
           Il a été conçu pour votre entreprise et aux demandes du poste proposé.
-        </p>
+        </p> */}
       </section>
     </>
   )
